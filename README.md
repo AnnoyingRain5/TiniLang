@@ -1,31 +1,33 @@
 <h1 align="center">
-<p>PIKALANG - The Pikachu Programming Language</p>
+<p>TiniLang - The Victini Programming Language</p>
+<br>
+<p> This readme is <strong>under heavy construction</strong>, so references to Pikalang are still apparent.</p>
 <br>
 <img style="margin-bottom:-14px" src="images/shock.gif" />
 <br>
 </h1>
 
-A [brainfuck][2] derivative based off the vocabulary of [Pikachu][3] from [Pokémon][4].
+A fork of PikaLang, which is a [brainfuck][2] derivative based off the vocabulary of [Victini][3] from [Pokémon][4].
 
 Syntax
 ------
-pikalang  | brainfuck | description                                   
+Tinilang  | brainfuck | description                                   
 ----------|-----------|-----------------------------------------------
-`pi`      | +         | increment the byte at pointer                 
-`ka`      | -         | decrement the byte at pointer                 
-`pika`    | [         | if pointer is zero, jump to matching `chu`    
-`chu`     | ]         | if pointer is nonzero, jump to matching `pika`
-`pipi`    | >         | increment the data pointer                    
-`pichu`   | <         | decrement the data pointer                    
-`pikapi`  | ,         | input of one byte into pointer                
-`pikachu` | .         | output the byte at pointer                    
+`vi`      | +         | increment the byte at pointer                 
+`ni`      | -         | decrement the byte at pointer                 
+`vicvic`  | [         | if pointer is zero, jump to matching `chu`    
+`tinitini`| ]         | if pointer is nonzero, jump to matching `pika`
+`victi`   | >         | increment the data pointer                    
+`vicni`   | <         | decrement the data pointer                    
+`vic`     | ,         | input of one byte into pointer                
+`tini`    | .         | output the byte at pointer                    
 
 
 Installation
 ------------
 stable:
 ```shell
-pip install pikalang
+pip install Tinilang
 ```
 
 or bleeding edge...
@@ -94,6 +96,6 @@ project to teach myself `ply`, which is protected under fair use.
 
 [1]: http://esolangs.org/wiki/Pikalang
 [2]: http://en.wikipedia.org/wiki/Brainfuck "Brainfuck"
-[3]: https://www.google.com/search?q=pikachu&tbm=isch "Pikachu"
+[3]: https://www.google.com/search?q=Victini&tbm=isch "Victini"
 [4]: http://www.pokemon.com/ "Pokémon"
 [5]: http://elliot.land/post/write-your-own-brainfuck-interpreter "Elliot Chance"

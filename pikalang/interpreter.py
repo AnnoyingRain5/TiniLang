@@ -15,14 +15,14 @@ tokens = (
     "CLOSE_LOOP",
 )
 
-t_INCREMENT = r"pi"
-t_DECREMENT = r"ka"
-t_SHIFT_LEFT = r"pipi"
-t_SHIFT_RIGHT = r"pichu"
-t_OUTPUT = r"pikachu"
-t_INPUT = r"pikapi"
-t_OPEN_LOOP = r"pika"
-t_CLOSE_LOOP = r"chu"
+t_INCREMENT = r"vi"
+t_DECREMENT = r"ni"
+t_SHIFT_LEFT = r"vicvic"
+t_SHIFT_RIGHT = r"tinitini"
+t_OUTPUT = r"victi"
+t_INPUT = r"vicni"
+t_OPEN_LOOP = r"vic"
+t_CLOSE_LOOP = r"tini"
 
 
 def t_newline(t):

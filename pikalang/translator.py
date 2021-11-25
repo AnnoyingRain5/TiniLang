@@ -7,14 +7,14 @@ Pikalang to BF translator
 class PikalangTranslator():
     def __init__(self):
         self.bf_2_pika_dictionary = {
-            '+': 'pi',
-            '-': 'ka',
-            '[': 'pika',
-            ']': 'chu',
-            '>': 'pipi',
-            '<': 'pichu',
-            ',': 'pikapi',
-            '.': 'pikachu'
+            '+': 'vi',
+            '-': 'ni',
+            '[': 'vicvic',
+            ']': 'tinitini',
+            '>': 'victi',
+            '<': 'vicni',
+            ',': 'vic',
+            '.': 'tini'
         }
         self.pika_2_bf_dictionary = {v: k for k, v in self.bf_2_pika_dictionary.items()}
 
