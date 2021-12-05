@@ -81,7 +81,7 @@ def p_error(p):
     print("Syntax error in input!")
 
 
-class PikalangProgram:
+class TiniLangProgram:
     def __init__(self, source):
         self.source = source
 

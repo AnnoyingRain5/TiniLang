@@ -1,24 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Pikalang setup script."""
+"""TiniLang setup script."""
 
 from setuptools import setup
 
-__VERSION__ = "0.2.1"
+__VERSION__ = "0.0.1"
 
 if __name__ == "__main__":
     setup(
-        name="pikalang",
+        name="TiniLang",
         version=__VERSION__,
-        description="A brainfuck derivative based off the vocabulary of Pikachu.",
+        description="A brainfuck derivative based off the vocabulary of Victini.",
         license="MIT",
         keywords="esoteric programming language brainfuck",
-        author="Blake Grotewold",
-        author_email="hello@grote.world",
-        url="https://github.com/grotewold/pikalang",
-        py_modules=["pikalang", "pikalang.cli", "pikalang.interpreter", "setup"],
+        author="AnnoyingRains",
+        author_email="annoyingrain5@gmail.com",
+        url="https://github.com/annoyingrain5/tinilang",
+        py_modules=["TiniLang", "TiniLang.cli", "TiniLang.interpreter", "setup"],
         install_requires=["ply"],
-        entry_points={"console_scripts": ["pikalang = pikalang.cli:main"]},
+        entry_points={"console_scripts": ["TiniLang = TiniLang.cli:main"]},
         classifiers=[
             "Development Status :: 4 - Beta",
             "Environment :: Console",

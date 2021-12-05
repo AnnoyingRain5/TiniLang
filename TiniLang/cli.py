@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""pikalang.cli module.
+"""TiniLang.cli module.
 
-Command Line Interface to pikalang.
+Command Line Interface to TiniLang.
 
 Copyright (c) 2019 Blake Grotewold
 """
@@ -12,14 +12,14 @@ from __future__ import print_function
 import argparse
 import setup
 
-import pikalang
+import TiniLang
 
 
 def main():
     """Run application as a CLI executable"""
     arg_parser = argparse.ArgumentParser(
-        prog="pikalang",
-        description="a Pikalang interpreter written in Python",
+        prog="TiniLang",
+        description="a TiniLang interpreter written in Python",
         argument_default=argparse.SUPPRESS,
     )
 
@@ -33,10 +33,10 @@ def main():
 
     args = arg_parser.parse_args()
 
-    sourcecode = pikalang.load_source(args.file)
+    sourcecode = TiniLang.load_source(args.file)
 
     if sourcecode:
-        pikalang.evaluate(sourcecode)
+        TiniLang.evaluate(sourcecode)
     else:
         arg_parser.print_usage()
 
