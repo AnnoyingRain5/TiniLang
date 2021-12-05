@@ -1,22 +1,21 @@
 <h1 align="center">
-<p>TiniLang - The Victini Programming Language</p>
+<p><b>TiniLang</b> - The Victini Programming Language</p>
 <br>
-<p> This readme is <strong>under heavy construction</strong>, so references to Pikalang are still apparent.</p>
 <br>
-<img style="margin-bottom:-14px" src="images/shock.gif" />
+<img style="margin-top:-100px" src="images/victini.gif" />
 <br>
 </h1>
 
-A fork of PikaLang, which is a [brainfuck][2] derivative based off the vocabulary of [Victini][3] from [Pokémon][4].
+A fork of PikaLang, which is a [brainfuck][2] derivative based off the vocabulary of [Victini][3] from [Pokemon][4].
 
 Syntax
 ------
-Tinilang  | brainfuck | description                                   
+TiniLang  | brainfuck | description                                   
 ----------|-----------|-----------------------------------------------
 `vi`      | +         | increment the byte at pointer                 
 `ni`      | -         | decrement the byte at pointer                 
-`vicvic`  | [         | if pointer is zero, jump to matching `chu`    
-`tinitini`| ]         | if pointer is nonzero, jump to matching `pika`
+`vicvic`  | [         | if pointer is zero, jump to matching `tinitini`    
+`tinitini`| ]         | if pointer is nonzero, jump to matching `vicvic`
 `victi`   | >         | increment the data pointer                    
 `vicni`   | <         | decrement the data pointer                    
 `vic`     | ,         | input of one byte into pointer                
@@ -27,13 +26,13 @@ Installation
 ------------
 stable:
 ```shell
-pip install Tinilang
+pip install TiniLang
 ```
 
 or bleeding edge...
 ```shell
-git clone https://github.com/grotewold/pikalang.git
-cd pikalang
+git clone https://github.com/AnnoyingRain5/TiniLang.git
+cd TiniLang
 
 python setup.py install
 ```
@@ -42,32 +41,29 @@ python setup.py install
 Usage
 -----
 ```shell
-pikalang path/to/file.pokeball
+TiniLang path/to/file.tini
 ```
 
 
 File Extention
 --------------
-A pikalang program must be stored in a file with a `.pokeball` extention
+A TiniLang program must be stored in a file with a `.tini` extention
 
 
 API Usage
 ---------
 ```python
-import pikalang
+import TiniLang
 
 sourcecode = """
-    pi pi pi pi pi pi pi pi pi pi pika pipi pi pi pi pi pi pi pi pipi pi pi pi
-    pi pi pi pi pi pi pi pipi pi pi pi pipi pi pichu pichu pichu pichu ka chu
-    pipi pi pi pikachu pipi pi pikachu pi pi pi pi pi pi pi pikachu pikachu pi
-    pi pi pikachu pipi pi pi pikachu pichu pichu pi pi pi pi pi pi pi pi pi pi
-    pi pi pi pi pi pikachu pipi pikachu pi pi pi pikachu ka ka ka ka ka ka
-    pikachu ka ka ka ka ka ka ka ka pikachu pipi pi pikachu pipi pikachu
+    tinitini vi vi vi vi vi vi vi vi vic vicvic vi vi vi vi vi vi vi vi vi tinitini ni tini vicvic victi tinitini vi vi vi vi vic vicvic vi vi vi vi vi vi vi tinitini ni tini vicvic vi victi vi vi vi vi vi vi vi victi victi vi vi vi victi tinitini tinitini vi vi vi vi vi vi vic vicvic vi vi vi vi vi vi vi tinitini ni tini vicvic vi 
+    vi victi ni ni ni ni ni ni ni ni ni ni ni ni victi tinitini vi vi vi vi vi vi vic vicvic vi vi vi vi vi vi vi vi vi tinitini ni tini vicvic vi victi vicvic victi vi vi vi victi ni ni ni ni ni ni victi ni ni ni ni ni ni ni ni victi tinitini tinitini tinitini vi vi vi vi vic vicvic vi vi vi vi vi vi vi vi tinitini ni 
+    tini vicvic vi victi  
     """
 
-# or use sourcecode = pikalang.load_source("FILENAME.pokeball") to load from file
+# or use sourcecode = TiniLang.load_source("FILENAME.tini") to load from file
 
-pikalang.evaluate(sourcecode)
+TiniLang.evaluate(sourcecode)
 ```
 
 Development
@@ -79,23 +75,22 @@ pipenv install
 
 pipenv run black .
 
-pipenv run python -m pikalang tests/hello-world.pokeball
+pipenv run python -m TiniLang tests/hello-world.tini
 ```
 
 Thanks
 ------
-Special thanks to [Elliot Chance][5] for providing the base implementation of this.
+Special thanks to [Groteworld][5] for creating pikalang, which was only slightly modified to create TiniLang
 
 Disclaimer
 ----------
-This is a fan-based parody of themes from [Pokémon][3]. The language,
+This is a fan-based parody of themes from [Pokemon][3]. The language,
 as well as its author, is in no way associated with the Pokémon francise
-and its creators, nor is this project, in any way, for-profit. This is a
-project to teach myself `ply`, which is protected under fair use.
+and its creators, nor is this project, in any way, for-profit.
 
 
 [1]: http://esolangs.org/wiki/Pikalang
 [2]: http://en.wikipedia.org/wiki/Brainfuck "Brainfuck"
 [3]: https://www.google.com/search?q=Victini&tbm=isch "Victini"
-[4]: http://www.pokemon.com/ "Pokémon"
-[5]: http://elliot.land/post/write-your-own-brainfuck-interpreter "Elliot Chance"
+[4]: http://www.pokemon.com/ "Pokemon"
+[5]: https://github.com/groteworld/pikalang "GroteWorld"
