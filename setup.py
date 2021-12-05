@@ -1,22 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """TiniLang setup script."""
-
+import pathlib
 from setuptools import setup
 
-__VERSION__ = "0.0.1"
+__VERSION__ = "1.0.0.2"
+
+HERE = pathlib.Path(__file__).parent
+README = (HERE / "README.md").read_text()
 
 if __name__ == "__main__":
     setup(
         name="TiniLang",
         version=__VERSION__,
         description="A brainfuck derivative based off the vocabulary of Victini.",
+        long_description=README,
+        long_description_content_type="text/markdown",
         license="MIT",
         keywords="esoteric programming language brainfuck",
         author="AnnoyingRains",
         author_email="annoyingrain5@gmail.com",
         url="https://github.com/annoyingrain5/tinilang",
-        py_modules=["TiniLang", "TiniLang.cli", "TiniLang.interpreter", "setup"],
+        py_modules=["TiniLang", "TiniLang.cli", "TiniLang.interpreter", "setup", "TiniLang.translator"],
         install_requires=["ply"],
         entry_points={"console_scripts": ["TiniLang = TiniLang.cli:main"]},
         classifiers=[
